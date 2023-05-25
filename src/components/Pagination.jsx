@@ -11,7 +11,7 @@ function Paginacion({ length, currentPage, filterPage }) {
     const [page, setPage] = useState(1);
 
     let totalPages = Math.ceil(length / 10);
-    length == 0 ? totalPages = 1 : totalPages = totalPages;
+    length == 0 ? totalPages = 1 : null;
 
     useEffect(() => {
         currentPage(page)
