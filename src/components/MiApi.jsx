@@ -26,7 +26,7 @@ const Api = ({ showModal, birdy, filteredBirds, dataOfApi, page }) => {
             }
         };
         consultarApi();
-    }, [])
+    }, []);
 
     const handleClick = (e) => {
         const bird = e.target.value;
